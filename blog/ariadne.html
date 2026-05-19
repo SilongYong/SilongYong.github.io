@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ariadne | Silong Yong</title>
+
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  <link rel="icon" href="../images/icon.png">
+  <style>
+    .blog-container {
+      width: min(100% - 32px, 850px);
+      max-width: 850px;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: separate;
+      margin-right: auto;
+      margin-left: auto;
+      line-height: 1.55;
+      table-layout: fixed;
+    }
+
+    .blog-container table {
+      width: 100% !important;
+      max-width: 100%;
+      table-layout: fixed;
+    }
+
+    .blog-container td {
+      box-sizing: border-box;
+    }
+
+    .blog-content {
+      padding: 20px 28px;
+      width: 100%;
+      max-width: 794px;
+      vertical-align: top;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .header-cell {
+      padding: 2.5% 28px;
+      width: 100%;
+      max-width: 794px;
+      vertical-align: middle;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .title-line {
+      display: block;
+      max-width: 794px;
+      margin: 0 auto;
+      line-height: 1.22;
+    }
+
+    .blog-content p,
+    .blog-content li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .blog-content h2 {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-top: 36px;
+      margin-bottom: 14px;
+    }
+
+    .blog-content h3 {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 17px;
+      font-style: italic;
+      margin-top: -8px;
+      color: #555;
+    }
+
+    .date {
+      text-align: center;
+      color: #666;
+    }
+
+    .authors {
+      text-align: center;
+      margin: 16px auto 8px auto;
+      max-width: 740px;
+      color: #333;
+    }
+
+    .authors p {
+      margin: 4px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .affiliations {
+      text-align: center;
+      color: #666;
+      margin: 8px auto 18px auto;
+      max-width: 740px;
+    }
+
+    .affiliations p {
+      margin: 3px 0;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .paper-meta {
+      display: flex;
+      justify-content: center;
+      gap: 44px;
+      max-width: 460px;
+      margin: 18px auto 0 auto;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+    }
+
+    .paper-meta-label {
+      display: block;
+      color: #666;
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .paper-meta-value {
+      font-size: 15px;
+    }
+
+    .full-paper-link {
+      font-weight: 600;
+    }
+
+    .figure-placeholder {
+      border: 1px solid #d6d6d6;
+      background: #fafafa;
+      padding: 14px 16px;
+      margin: 24px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .figure-placeholder strong {
+      font-style: normal;
+      text-decoration: none;
+    }
+
+    .blog-figure {
+      margin: 26px 0;
+      text-align: center;
+    }
+
+    .blog-figure img {
+      display: block;
+      width: 92%;
+      max-width: 760px;
+      margin: 0 auto;
+      border: 0;
+    }
+
+    @media (max-width: 640px) {
+      .blog-figure img {
+        width: 100%;
+      }
+    }
+
+    .blog-figure figcaption {
+      margin-top: 8px;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.45;
+      text-align: left;
+    }
+
+    .callout {
+      border-left: 3px solid #1772d0;
+      padding: 4px 0 4px 16px;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    pre {
+      overflow-x: auto;
+      border: 1px solid #d6d6d6;
+      background: #fafafa;
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    code {
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .blog-content {
+        padding: 20px;
+      }
+
+      .header-cell {
+        padding: 2.5%;
+      }
+
+      .paper-meta {
+        display: block;
+        text-align: center;
+      }
+
+      .paper-meta div + div {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="blog-container"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td class="header-cell">
+              <p>
+                <a href="../index.html">Home</a> &nbsp;/&nbsp;
+                <a href="index.html">Blog</a>
+              </p>
+              <p style="text-align:center">
+                <name class="title-line">Can Generative Models Synthesize Trajectories Without Ever Seeing Trajectories?</name>
+              </p>
+              <p class="subtitle">Trajectory planning from state-only data through learned manifold geometry.</p>
+
+              <div class="authors">
+                <p>
+                  <strong>Silong Yong</strong><sup>1</sup>,
+                  Anji Liu<sup>2</sup>,
+                  Cunxi Dai<sup>1</sup>,
+                  Carl Busart<sup>3</sup>,
+                  Guanya Shi<sup>1</sup>,
+                  Yilun Du<sup>4</sup>,
+                  Katia Sycara<sup>1</sup>,
+                  Yaqi Xie<sup>1</sup>
+                </p>
+              </div>
+
+              <div class="affiliations">
+                <p><sup>1</sup>Carnegie Mellon University &nbsp;/&nbsp; <sup>2</sup>National University of Singapore</p>
+                <p><sup>3</sup>DEVCOM Army Research Laboratory &nbsp;/&nbsp; <sup>4</sup>Harvard University</p>
+              </div>
+
+              <div class="paper-meta">
+                <div>
+                  <span class="paper-meta-label">Published</span>
+                  <span class="paper-meta-value">May 18, 2026</span>
+                </div>
+                <div>
+                  <span class="paper-meta-label">Full Paper</span>
+                  <span class="paper-meta-value"><a class="full-paper-link" href="../paper/preprint.pdf">Read PDF &rarr;</a></span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td class="blog-content">
+              <figure class="blog-figure">
+                <img src="figs/001.png" alt="Figure 1: trajectory coverage and generalization">
+                <figcaption>
+                  <strong>Figure 1.</strong> Trajectory-based models can fail on unseen start-goal combinations even when the relevant states are present; state-manifold planning can recover a path without trajectory data.
+                </figcaption>
+              </figure>
+
+              <p>Trajectory planning has a comforting story: collect demonstrations, train a generative model over trajectories, then condition on a start and a goal to sample a path.</p>
+
+              <p>This story has become increasingly compelling as diffusion and flow-based models have moved into robotics. A trajectory is just a sequence. A sequence can be denoised. A denoised sequence can become a plan.</p>
+
+              <p>But there is a quiet fragility hiding inside this formulation: trajectories are not just data points. They are entire paths through a combinatorial space. Demonstrations can cover some paths, but they cannot cover all of them.</p>
+
+              <p>This creates an odd failure mode. A robot may have seen the start. It may have seen the goal. It may even have seen most of the intermediate states required to solve the task. And yet a trajectory model can still fail because it never observed the exact path connecting them.</p>
+
+              <p>Maybe the missing object is not the state space. Maybe the missing object is only the path through it.</p>
+
+              <p>So the question is:</p>
+
+              <div class="callout">
+                <p><strong>Can we plan trajectories without trajectory data?</strong></p>
+              </div>
+
+              <h2>TL;DR</h2>
+
+              <p>Most modern generative planners learn a distribution over trajectories. Here we ask a sharper question: can we do trajectory planning without trajectory data?</p>
+
+              <p>Our answer is to train only on valid states, then recover trajectories using the learned geometry of those states. Missing trajectories does not mean missing states.</p>
+
+              <p>This extends the manifold hypothesis from a descriptive idea into an operational one: if a generative model learns the valid-state manifold, we can probe its local geometry and plan on it.</p>
+
+              <div class="callout">
+                <p><strong>Trajectory planning can emerge from state-only data.</strong></p>
+              </div>
+
+              <p>From a scaling-law perspective, this is a statement about <strong>data utilization</strong>. Trajectory datasets often contain rich state coverage, but trajectory-level training may not use that structure fully. Learning geometry gives us another way to extract planning signal from the data we already have.</p>
+
+              <p>We call the method <strong>Ariadne</strong>, after the mythological figure who gave Theseus a thread to navigate the Labyrinth. The learned state manifold is a kind of labyrinth, and the planner follows geometric cues through it to connect a start and a goal without being handed a demonstrated route.</p>
+
+              <p>Ariadne uses geometric information from a generative model trained on state-only data. It moves toward the goal while repeatedly correcting motion back onto the learned manifold. We validate this in Maze2D, a 6D tabletop robot motion planning task, and a harder DualKUKA setting with two robot arms.</p>
+
+              <h2>Why Trajectory Learning Struggles</h2>
+
+              <p>Generative planning turns planning into conditional generation. A diffusion planner, for example, can denoise an entire trajectory sequence while enforcing a start state, goal state, or other task constraints.</p>
+
+              <p>But this reframing changes what must be covered by data.</p>
+
+              <p>If we learn a distribution over states, we need to know which configurations are valid. If we learn a distribution over trajectories, we need to know which <em>ordered chains</em> of configurations are valid. This is a much larger object.</p>
+
+              <p>Imagine a maze. The free cells are states. A trajectory is a path through those cells. A dataset may reveal many valid states without revealing every route between them. A trajectory model can then fail on a new start-goal pairing even when the start, goal, and intermediate states are familiar.</p>
+
+              <p>The same issue appears in robot motion planning. A tabletop robot arm may have many observed collision-free configurations, but demonstrations only sample some motions through them.</p>
+
+              <p>This is the difference between <em>state coverage</em> and <em>trajectory coverage</em>.</p>
+
+              <p>Trajectory coverage is hard because paths compose. Demonstrations inevitably reveal a tiny, biased subset of the feasible trajectory space.</p>
+
+              <p>So when a trajectory model fails on an unseen start-goal pair, the failure may not mean the world is unfamiliar. It may mean the <em>connection</em> was unfamiliar.</p>
+
+              <p>This is the motivating tension: the robot may know the places, but not the route. What if we stopped asking the model to learn routes?</p>
+
+              <h2>A Shift in Perspective</h2>
+
+              <p>Our conceptual move is simple but quite radical:</p>
+
+              <p>Instead of learning the distribution of trajectories, learn the distribution of valid states.</p>
+
+              <p>That is, train a generative model on feasible configurations: free maze positions, collision-free robot states, valid end-effector poses. The model is not told which state came before which. It only learns the shape of the feasible region.</p>
+
+              <p>At first this sounds insufficient. Planning is about going somewhere. A bag of states has no arrows. It has no time. It has no transitions.</p>
+
+              <p>But geometry carries more information than it first appears to.</p>
+
+              <p>If valid states form a structured set, then the shape of that set tells us something about how motion should proceed. In a maze, the free space bends around walls. In robot motion planning, collision-free configurations form a complicated subset of the ambient configuration space. If a path is feasible, it should remain on or near this valid set.</p>
+
+              <p>This is where the manifold intuition enters.</p>
+
+              <p>A manifold is a space that may be globally curved or tangled, but locally looks simple. In robotics, the set of valid states can be thought of similarly: around any valid state, some directions keep you feasible, while others push you into collision or invalidity.</p>
+
+              <p>Planning can then be reframed as:</p>
+
+              <div class="callout">
+                <p><strong>Find a curve from the start to the goal that stays on the learned manifold of valid states.</strong></p>
+              </div>
+
+              <p>The learned state distribution tells us what is valid. Its geometry tells us how to stay valid while moving.</p>
+
+              <p>This is also different from latent interpolation. We are not learning a latent space and hoping that straight lines or geodesics in that latent space decode into feasible motions. Ariadne directly probes the geometry of the data manifold in state space: the local tangent and normal structure of valid states is what guides the planner.</p>
+
+              <p>In that sense, we are pushing the manifold hypothesis one step further. The usual statement is existential: high-dimensional data often concentrates near a lower-dimensional manifold. Here we ask for something more operational: if a generative model has learned that manifold, can we extract enough of its local geometry to plan on it?</p>
+
+              <p>Now the problem becomes constructive: how do we turn geometry into an actual path?</p>
+
+              <h2>How Geometry Becomes Planning</h2>
+
+              <figure class="blog-figure">
+                <img src="figs/002.png" alt="Figure 2: Ariadne method overview">
+                <figcaption>
+                  <strong>Figure 2.</strong> Method overview: straight-line interpolation satisfies endpoints but ignores the manifold; projection restores feasibility; correction-projection preserves endpoint progress.
+                </figcaption>
+              </figure>
+
+              <p>The method is easiest to understand with a toy picture: two points on a curved manifold, say an arc of a circle. The Euclidean straight line satisfies the endpoints, but it cuts through the interior and leaves the manifold. If the manifold represents valid states, this is an invalid plan.</p>
+
+              <p>This is the basic tension: endpoints are easy, feasibility is hard.</p>
+
+              <h3>1. Straight-Line Interpolation Fails</h3>
+
+              <p>The most naive plan is linear interpolation: start at the initial state and move in a straight line to the goal. This satisfies the endpoints exactly, but ignores the shape of the feasible state space. In a maze, the line may go through a wall. In robot motion planning, it may put the arm through an obstacle.</p>
+
+              <p>The straight line knows where to go, but not where it is allowed to be.</p>
+
+              <h3>2. Move, Then Project</h3>
+
+              <p>A natural fix is: move a little toward the goal, then project back to the manifold. The reference direction gives global intent; projection enforces local feasibility.</p>
+
+              <h3>3. Why Endpoint Constraints Break</h3>
+
+              <p>But projection changes the step. Part of the intended motion may be removed because it pointed off the manifold. The corrected step is feasible, but it may make less progress than expected. Over many steps, these small distortions accumulate.</p>
+
+              <p>This creates a tradeoff between local feasibility and global endpoint satisfaction. Projection helps keep each point valid, but it can also distort the accumulated motion needed to arrive at the specified goal.</p>
+
+              <p>A planner that only projects can become a very polite wanderer: always staying on the sidewalk, not always reaching the address.</p>
+
+              <h3>4. Correction-Projection ODE</h3>
+
+              <p>Ariadne addresses this with a correction-projection ODE.</p>
+
+              <p>The important idea is the role of correction. Ariadne accounts for the progress lost during projection, so the path remains tied to the desired start-goal interpolation while still being pulled back onto the learned manifold.</p>
+
+              <p>At each point, the planner asks: what direction should I move so that I both remain feasible and continue making progress toward the endpoint? The reference path supplies intent. The learned manifold supplies feasibility. The correction term keeps the two from drifting apart.</p>
+
+              <h2>Geometry From Generative Models</h2>
+
+              <p>So far, we have assumed access to the manifold geometry. But the model is only trained on valid states. How does a generative model reveal geometry?</p>
+
+              <p>The answer starts with the score function. For a diffusion or score-based model, the score points in the direction where data density increases. If you perturb a data point slightly off the valid set, the score often points back toward the data manifold.</p>
+
+              <p>This gives a first-order notion of the manifold.</p>
+
+              <p>If I am near the valid state manifold, the score tells me which direction is "back." But first-order information is not enough in general. Realistic state manifolds can be lower-dimensional and more complicated, with multiple independent directions that move off the manifold. To project correctly, we need the local normal space, not just one normal vector.</p>
+
+              <p>This is why we go beyond the raw score.</p>
+
+              <figure class="blog-figure">
+                <img src="figs/003.png" alt="Figure 3: score and normal space estimation">
+                <figcaption>
+                  <strong>Figure 3.</strong> A score direction can point back toward the data manifold, but lower-dimensional manifolds require estimating a richer local normal space.
+                </figcaption>
+              </figure>
+
+              <p>The intuition is simple: the score gives a local arrow pointing back toward high-density states. But a single arrow is not enough to describe the shape of the manifold. By looking at how that arrow changes as we move slightly in different directions, the Jacobian or Hessian reveals which directions behave like off-manifold normals and which directions behave like on-manifold tangents.</p>
+
+              <p>You do not need the full differential geometry to understand the algorithm. The generative model is doing two jobs:</p>
+
+              <ol>
+                <li>It learns which states are valid.</li>
+                <li>It provides local geometric signals that tell the planner how to stay valid while moving.</li>
+              </ol>
+
+              <p>That is what makes the state-only setting plausible. The model never observes trajectories, but it learns enough about the shape of the state space to support trajectory construction.</p>
+
+              <h2>Does It Actually Work?</h2>
+
+              <p>The empirical question is sharp:</p>
+
+              <p>If we train only on valid states, can the planner generate feasible trajectories for new start-goal pairs?</p>
+
+              <p>We evaluate this in three settings: Maze2D, YAM 6D, and DualKUKA. Across these settings, the model sees feasible states, not demonstrations. At test time, it receives a start-goal pair and constructs a path using the learned geometry.</p>
+
+              <p>The results are best read visually first.</p>
+
+              <h3>Maze2D</h3>
+
+              <p>Maze2D is the cleanest setting for the idea. The valid states are positions in free space; the invalid states are walls. A straight line from start to goal often crosses obstacles, so the planner must bend around the maze structure.</p>
+
+              <figure class="blog-figure">
+                <img src="figs/maze.png" alt="Figure 4: Ariadne planned trajectories in Maze2D">
+                <figcaption>
+                  <strong>Figure 4.</strong> Maze2D qualitative result. The blue line is the straight reference path; the red curve is Ariadne's planned trajectory.
+                </figcaption>
+              </figure>
+
+              <p>The visual story is exactly what we want from the method. The straight reference path provides a crude global direction. Ariadne then warps this path along the learned state manifold, producing a route that follows free space rather than cutting through walls. It was not trained on maze trajectories that tell it how to connect locations.</p>
+
+              <p>This is where the phrase "missing trajectories does not mean missing states" becomes operational. The path may be missing from the dataset, but the free-space structure still leaves a geometric trace.</p>
+
+              <p>Quantitatively, the results show that a state-only model can produce feasible plans while using strictly less supervision than trajectory-trained planners.</p>
+
+              <h3>YAM 6D</h3>
+
+              <p>The next setting increases the dimensionality and moves from toy navigation to robot motion planning. In YAM 6D, a 6-DoF robot arm operates in a tabletop workspace with obstacles. Training data consists only of collision-free states, with no trajectory data and no transition information.</p>
+
+              <p>This is a more demanding test of the manifold view: the feasible set is hidden inside a higher-dimensional representation, and a straight interpolation can easily collide.</p>
+
+              <figure class="blog-figure">
+                <img src="figs/robot_exp.png" alt="Figure 5: Ariadne planned trajectory in YAM 6D">
+                <figcaption>
+                  <strong>Figure 5.</strong> YAM 6D qualitative result. Color indicates task progress from start to goal.
+                </figcaption>
+              </figure>
+
+              <p>The qualitative result shows the planned path routing around obstacles while maintaining feasibility.</p>
+
+              <h3>DualKUKA</h3>
+
+              <p>The DualKUKA environment pushes the idea further. Two 7-DoF robot arms must avoid obstacles and avoid colliding with each other, so feasibility is coupled across both arms.</p>
+
+              <figure class="blog-figure">
+                <img src="figs/qual_dualkuka_hor.png" alt="Figure 6: Ariadne planned trajectory in DualKUKA">
+                <figcaption>
+                  <strong>Figure 6.</strong> DualKUKA qualitative result. Darker colors represent the start, and lighter colors represent the end.
+                </figcaption>
+              </figure>
+
+              <p>We find that Ariadne achieves results comparable to trajectory-learning-based methods in this setting, while not training on trajectory data. The result shows that the geometry of valid states can serve as a useful planning substrate even in higher-dimensional robot motion planning.</p>
+
+              <h2>Bigger Implications</h2>
+
+              <p>The broader implication is that trajectory generation may not always require trajectory-level supervision. If valid state coverage is easier to obtain than expert demonstrations, then state-only learning gives us a weaker-data route to planning: learn the space first, then recover paths from its geometry.</p>
+
+              <p>This suggests a different perspective on scaling laws for trajectory learning. A common response to poor generalization is to collect more trajectories: more demonstrations, longer rollouts, broader offline datasets. But the trajectories we already collect often contain far more state coverage than trajectory-level training fully uses. The bottleneck may not only be data quantity; it may also be <strong>data utilization</strong>.</p>
+
+              <p>By learning the geometry of the valid-state distribution, Ariadne tries to use the structure already present in the data more efficiently. Instead of treating each trajectory as one supervised sequence, we can ask what manifold of feasible states those trajectories reveal, and how much planning behavior can be recovered from that structure.</p>
+
+              <h2>Limitations</h2>
+
+              <p>The most credible version of this idea comes with boundaries. Ariadne plans feasible state sequences; it does not learn full transition dynamics. Contacts, underactuation, torque limits, velocity constraints, and dynamic stability can all matter in real robots.</p>
+
+              <p>The approach also depends on the quality of geometry estimation. If the generative model learns a poor state distribution, or if the score/Jacobian/Hessian signals are noisy, the projection can become unreliable.</p>
+
+              <p>The method also depends on the reference path used during construction. In our experiments, a straight-line reference is often sufficient, but more complex settings may benefit from other parameterizations or imperfect trajectories from another planner.</p>
+
+              <h2>Resources</h2>
+
+              <p><strong>Full Paper:</strong> <a href="../paper/preprint.pdf">Trajectory Planning without Trajectory Data: A Manifold-Guided Approach &rarr;</a></p>
+
+              <p><strong>Citation:</strong></p>
+
+              <pre><code>@misc{yong2026trajectory,
+  title={Trajectory Planning without Trajectory Data: A Manifold-Guided Approach},
+  author={Yong, Silong and Liu, Anji and Dai, Cunxi and Busart, Carl and Shi, Guanya and Du, Yilun and Sycara, Katia and Xie, Yaqi},
+  year={2026},
+  note={Preprint}
+}</code></pre>
+
+              <p>The broader lesson is simple: for trajectory planning, trajectory data may not be the only path to trajectory generation. If valid states already reveal the geometry of the task, then better data utilization can turn state coverage into motion. Scaling planning systems may therefore depend not only on collecting more trajectories, but also on learning how to read more structure from the data we already have.</p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+</body>
+</html>
