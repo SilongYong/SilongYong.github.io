@@ -185,6 +185,13 @@
       border: 0;
     }
 
+    .blog-video video {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
     @media (max-width: 640px) {
       .blog-figure img {
         width: 100%;
@@ -291,6 +298,14 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td class="blog-content">
+              <figure class="blog-figure blog-video">
+                <video controls playsinline preload="metadata" aria-label="Ariadne video overview">
+                  <source src="videos/ariadne-overview.mp4" type="video/mp4">
+                  Your browser does not support embedded video. <a href="videos/ariadne-overview.mp4">Download the video</a>.
+                </video>
+                <figcaption>A video overview of Ariadne: trajectory planning without trajectory data.</figcaption>
+              </figure>
+
               <figure class="blog-figure">
                 <img src="figs/001.png" alt="Figure 1: trajectory coverage and generalization">
                 <figcaption>
@@ -530,15 +545,11 @@
 
               <p><strong>Citation:</strong></p>
 
-              <pre><code>@misc{yong2026trajectory,
-  title  = {Trajectory Planning without Trajectory Data: A Manifold-Guided Approach},
-  author = {Yong, Silong and Liu, Anji and Dai, Cunxi and Busart, Carl and Shi, Guanya and Du, Yilun and Sycara, Katia and Xie, Yaqi},
-  year   = {2026},
-  eprint = {2610.08863},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.RO},
-  note   = {Accepted at NeurIPS 2026},
-  url    = {https://arxiv.org/abs/2610.08863}
+              <pre><code>@article{yong2026trajectory,
+  title={Trajectory Planning without Trajectory Data: A Manifold-Guided Approach},
+  author={Yong, Silong and Liu, Anji and Dai, Cunxi and Busart, Carl and Shi, Guanya and Du, Yilun and Sycara, Katia and Xie, Yaqi},
+  journal={arXiv preprint arXiv:2610.08863},
+  year={2026}
 }</code></pre>
 
               <p>The broader lesson is simple: for trajectory planning, trajectory data may not be the only path to trajectory generation. If valid states already reveal the geometry of the task, then better data utilization can turn state coverage into motion. Scaling planning systems may therefore depend not only on collecting more trajectories, but also on learning how to read more structure from the data we already have.</p>
